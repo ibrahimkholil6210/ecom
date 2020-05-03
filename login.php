@@ -13,7 +13,15 @@
 	<section id="form"><!--form-->
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4 col-sm-offset-1">
+				<div class="col-sm-12">
+					<div class="breadcrumbs">
+						<ol class="breadcrumb">
+							<li><a href="index">Home</a></li>
+							<li class="active">Authintication</li>
+						</ol>
+					</div>
+				</div>
+				<div class="col-sm-5">
 					<div class="login-form"><!--login form-->
 						<h2>Login to your account</h2>
 						<form action="login.php" method="post">
@@ -26,7 +34,7 @@
 				<div class="col-sm-2">
 					<h2 class="or text-center">OR</h2>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-5">
 					<div class="signup-form"><!--sign up form-->
 						<h2>New User Signup!</h2>
 						<form action="" method="post">

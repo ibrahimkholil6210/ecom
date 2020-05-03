@@ -8,7 +8,14 @@
 	<section>
 		<div class="container">
 			<div class="row">
-				
+				<div class="col-sm-12">
+					<div class="breadcrumbs">
+						<ol class="breadcrumb">
+							<li><a href="index">Home</a></li>
+							<li class="active">All new items</li>
+						</ol>
+					</div>
+				</div>
 				<?php include 'inc/sidenav.php'; ?>
 				<?php include 'inc/all_new.php'; ?>
 				

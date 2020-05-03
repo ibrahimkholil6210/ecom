@@ -7,7 +7,7 @@
 
 <div class="container" style="min-height: 80vh;">
 	<div class="content">
-            <div class="container-fluid">
+            <div class="container-fluid table-responsive">
                 <?php  
                     if ($user_role == 1) {
                         
@@ -118,13 +118,13 @@
                     <thead>
                       <tr>
                         <th class="text-center">#</th>
-                        <th class="text-center">Product</th>
-                        <th class="text-center">Amount</th>
                         <th class="text-center">Token No.</th>
+                        <th class="text-center">Amount</th>
                         <th class="text-center">Bkash</th>
                         <th class="text-center">Transection ID</th>
                         <th class="text-center">Date</th>
                         <th class="text-center">Status</th>
+                        <th class="text-center">View</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -137,6 +137,7 @@
                             if ($result) {
                                 $i = 1;
                                 while($row = mysqli_fetch_assoc($result)){
+                                    $order_id = $row['order_id'];
                                     $product_ids = $row['product_ids'];
                                     $amount = $row['amount'];
                                     $order_status = $row['order_status'];
@@ -145,32 +146,11 @@
                                     $bkash_number = $row['bkash_number'];
                                     $bkash_transection_id = $row['bkash_transection_id'];
                                 
-                            
-
-
                         ?>
                       <tr>
                         <td><?php echo $i++ ?></td>
-                        <td>
-                            <?php 
-                                $product_ids=explode(",",$product_ids);
-
-                                foreach ($product_ids as $key) {
-                                    
-                                    $query1 = "SELECT * FROM tbl_products WHERE product_id = '$key'";
-                                    $result1 = mysqli_query($con,$query1);
-                                    if ($result1) {
-                                        while ($row1 = mysqli_fetch_assoc($result1)) {
-                                            echo $product_name = $row1['product_name'].', ';
-                                        }
-                                    }
-                                }
-                                
-                            ?>
-                                
-                        </td>
-                        <td><?php echo $amount." TK" ?></td>
                         <td><?php echo $token_no ?></td>
+                        <td><?php echo $amount." TK" ?></td>
                         <td><?php echo $bkash_number ?></td>
                         <td><?php echo $bkash_transection_id ?></td>
                         <td><?php echo $date ?></td>
@@ -186,6 +166,7 @@
                             ?>
                                     
                         </td>
+                        <td><a class="btn btn-warning" href="order_details?id=<?php echo $order_id ?>&uid=<?php echo $get_user_id ?>">View Order</a></td>
                       </tr>
 
                       <?php }} ?>

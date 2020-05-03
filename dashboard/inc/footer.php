@@ -2,7 +2,7 @@
 
 	<footer id="myFooter">
         <div class="footer-copyright" style="text-align: center;">
-             <p>© 2018 Copyright | FURNITURE</p>
+             <p>© 2020 Copyright | Juliet’s Zeal</p>
         </div>
     </footer>
 

@@ -66,6 +66,7 @@
 			      	<ul class="nav navbar-nav navbar-right">
 			        	<li>
 			        		<a href="profile.php">
+							<img src="uploads/profile/<?php echo $user_image ?>" style="width: 18px; height: 18px; border-radius: 50%;">
 			        			<?php  
 			        				echo $full_name;
 			        			?>

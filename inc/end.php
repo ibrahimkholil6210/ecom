@@ -4,6 +4,5 @@
 	<script src="assets/js/price-range.js"></script>
     <script src="assets/js/jquery.prettyPhoto.js"></script>
 	<script src="assets/js/main.js"></script>
-	<script src="assets/js/app.js"></script>
 </body>
 </html>

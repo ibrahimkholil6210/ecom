@@ -29,7 +29,7 @@
 		<div class="container">
 			<div class="breadcrumbs">
 				<ol class="breadcrumb">
-				  <li><a href="#">Home</a></li>
+				  <li><a href="index">Home</a></li>
 				  <li class="active">Shopping Cart</li>
 				</ol>
 			</div>
@@ -68,7 +68,10 @@
 		                    		
 		                    </td>
 		                    <td class="cart_price"><?php echo number_format($value['item_price']) ?></td>
-							<td class="cart_quantity"><input type="number" id="quantity" data-price="<?php echo $value['item_price'] ?>" style="width: 50px; text-align: center;" value="<?php echo $value['quantity'] ?>"></td>
+							<td class="cart_quantity">
+								<!-- <input type="number" id="quantity" data-price="<?php echo $value['item_price'] ?>" style="width: 50px; text-align: center;" value="<?php echo $value['quantity'] ?>"> -->
+								<?php echo $value['quantity'] ?>
+							</td>
 							
 		                    <td class="cart_total" data-price="<?php echo $value['quantity'] * $value['item_price'] ?>"><?php echo number_format($value['quantity'] * $value['item_price']) ?></td>
 
@@ -155,7 +158,7 @@
 								<div style="height:20px;"></div>
 								<input type="number" name="bkash_number" class="form-control" placeholder="Mobile Number" required="">
 								<div style="height:20px;"></div>
-								<input type="text" name="bkash_transection_id" class="form-control" placeholder="Transection ID" required>
+								<input type="text" name="bkash_transection_id" class="form-control" placeholder="Transection ID">
 										
 								</div>
 							</div>
@@ -209,11 +212,15 @@
 
     	
 
-        // echo $product_ids = implode(',', array_map(function($i) { return $i[0]; }, $_SESSION['shopping_cart']));
 
-		foreach($_SESSION['shopping_cart'] as $u) 
-		$uids[] = $u['item_id'];
+		foreach($_SESSION['shopping_cart'] as $u) {
+			$uids[] = $u['item_id'];
+			$qnt[] = $u['quantity'];
+			$unit_price[] = $u['item_price'];
+		}
 		$product_ids = implode(",",$uids);
+		$product_qnts = implode(",",$qnt);
+		$product_prices = implode(",",$unit_price);
 
         $bkash_number = mysqli_real_escape_string($con,$_POST['bkash_number']);
         $bkash_transection_id = mysqli_real_escape_string($con,$_POST['bkash_transection_id']);
@@ -226,16 +233,13 @@
 
 
         if (!empty($bkash_number) || !empty($bkash_transection_id)) {
-            $query = "INSERT INTO tbl_order(user_id,product_ids,amount,bkash_number,bkash_transection_id,token_no,shipping_address) VALUES('$user_id','$product_ids','$total','$bkash_number','$bkash_transection_id','$token_no','$shipping_address')";
+            $query = "INSERT INTO tbl_order(user_id,product_ids,order_quantity,order_unit_price,amount,bkash_number,bkash_transection_id,token_no,shipping_address) 
+				  VALUES('$user_id','$product_ids','$product_qnts','$product_prices','$total','$bkash_number','$bkash_transection_id','$token_no','$shipping_address')";
             $result = mysqli_query($con,$query);
             if ($result) {
                 echo "<script>alert('Transection Successfull!')</script>";
                 unset($_SESSION['shopping_cart']);
                 echo "<script>window.location.href='index.php'</script>";
-
-
-
-
             }else{
                 echo "<script>alert('ERROR!!! While inserting Transection')</script>";
             }

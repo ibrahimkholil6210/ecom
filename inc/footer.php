@@ -8,7 +8,7 @@
 						<div class="single-widget">
 							<h2>About Juliet’s Zeal</h2>
 							
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim nobis minus repellat laborum! Rerum voluptas tempora, ipsa quia rem sit repellendus similique autem iure eaque, distinctio ullam saepe dignissimos. Dolorem.</p>
+							<p>Jesmin Kawsary Juliet is a owner of this Fashion house. She is an SME Entrepreneur in Bangladesh. Try to Represent the product of Rajshahi in the world. You get designers choice product from this Fashion house. She designed different types of product which is make you comfortable & Fashionable..</p>
 							
 						</div>
 					</div>
@@ -18,11 +18,11 @@
 						<div class="single-widget">
 							<h2>Policies</h2>
 							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">Terms of Use</a></li>
-								<li><a href="#">Privecy Policy</a></li>
-								<li><a href="#">Refund Policy</a></li>
-								<li><a href="#">Billing System</a></li>
-								<li><a href="#">Ticket System</a></li>
+								<li><a href="404">Terms of Use</a></li>
+								<li><a href="404">Privecy Policy</a></li>
+								<li><a href="404">Refund Policy</a></li>
+								<li><a href="404">Billing System</a></li>
+								<li><a href="404">Ticket System</a></li>
 							</ul>
 						</div>
 					</div>
@@ -30,11 +30,11 @@
 						<div class="single-widget">
 							<h2>About Shopper</h2>
 							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">Company Information</a></li>
-								<li><a href="#">Careers</a></li>
-								<li><a href="#">Store Location</a></li>
-								<li><a href="#">Affillate Program</a></li>
-								<li><a href="#">Copyright</a></li>
+								<li><a href="404">Company Information</a></li>
+								<li><a href="404">Careers</a></li>
+								<li><a href="404">Store Location</a></li>
+								<li><a href="404">Affillate Program</a></li>
+								<li><a href="404">Copyright</a></li>
 							</ul>
 						</div>
 					</div>

@@ -20,7 +20,15 @@
 	<section>
 		<div class="container">
 			<div class="row">
-
+			<div class="col-sm-12">
+				<div class="breadcrumbs">
+					<ol class="breadcrumb">
+						<li><a href="index">Home</a></li>
+						<li><a href="shop">Shop</a></li>
+						<li class="active"><?php echo $fetch['product_name'] ?></li>
+					</ol>
+				</div>
+			</div>
 
 
 				<?php  

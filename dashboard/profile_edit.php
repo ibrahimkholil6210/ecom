@@ -70,10 +70,10 @@
 
 									        
 
-									        $fullname = mysql_real_escape_string($_POST['fullname']);
-									        $email = mysql_real_escape_string($_POST['email']);
-									        $DOB = mysql_real_escape_string($_POST['DOB']);
-									        $address = mysql_real_escape_string($_POST['address']);
+									        $fullname = mysqli_real_escape_string($con,$_POST['fullname']);
+									        $email = mysqli_real_escape_string($con,$_POST['email']);
+									        $DOB = mysqli_real_escape_string($con,$_POST['DOB']);
+									        $address = mysqli_real_escape_string($con,$_POST['address']);
 
 									        if (!empty($fullname) || !empty($email) || !empty($DOB) || !empty($address)) {
 

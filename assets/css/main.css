@@ -1159,8 +1159,7 @@ h2.title {
 
 #form {
   display: block;
-  margin-bottom: 120px;
-  margin-top: 120px;
+  margin-bottom: calc(100px/2);
   overflow: hidden;
 }
 
@@ -1265,7 +1264,7 @@ h2.title {
 
 .breadcrumbs .breadcrumb {
   background:transparent;
-  margin-bottom: 75px;
+  margin: 50px 0;
   padding-left: 0;
 }
 
@@ -1273,6 +1272,7 @@ h2.title {
   background:#fd0188;
   color: #FFFFFF;
   padding: 3px 7px;
+  position: relative;
 }
 
 .breadcrumbs .breadcrumb li a:after {
@@ -1283,9 +1283,9 @@ h2.title {
   border-style: solid;
   border-color:transparent transparent transparent #fd0188;
   position: absolute;
-  top: 11px;
-  left:48px;
-
+  top: 50%;
+  left: 100%;
+  transform: translate(-17%,-50%);
 }
 
 .breadcrumbs .breadcrumb > li + li:before {
