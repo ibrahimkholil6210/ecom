@@ -12,7 +12,7 @@ switch($_SERVER['PHP_SELF'])  {
         $title = 'Product | '.$fetch['product_name']; 
         break;
     case '/shop.php': 
-        $title = 'Product | JULIET\'S ZEAL'; 
+        $title = 'Shop | JULIET\'S ZEAL'; 
         break;
     case '/cart.php': 
         $title = 'Cart | JULIET\'S ZEAL'; 
