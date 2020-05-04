@@ -4,7 +4,7 @@
     include 'dashboard/db/db.php';
     include 'dashboard/config/config.php';
     include 'dashboard/inc/fetch_user.php';
-    include 'dashboard/inc/title.php';
+    include 'inc/title.php';
 
 
 ?>
