@@ -28,7 +28,7 @@
 					</div>
 					<div class="col-sm-2">
 						<div class="single-widget">
-							<h2>About Shopper</h2>
+							<h2>Shopper</h2>
 							<ul class="nav nav-pills nav-stacked">
 								<li><a href="404">Company Information</a></li>
 								<li><a href="404">Careers</a></li>

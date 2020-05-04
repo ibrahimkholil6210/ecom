@@ -20,7 +20,7 @@
 							<div class="product-image-wrapper">
 								<div class="single-products" style="padding: 10px;">
 									<div class="productinfo text-center">
-										<img src="dashboard/uploads/<?php echo $product_image; ?>" style="height: 200px;width: 100%;" />
+										<img src="dashboard/uploads/<?php echo $product_image; ?>" style="height: 250px;width: 250px;" />
 										<h2>৳ <?php echo $product_price ?></h2>
 										<div style="min-height: 50px;">
 											<a href="details.php?product_id=<?php echo $product_id; ?>"><p><?php echo $product_name ?></p></a>

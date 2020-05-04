@@ -1,4 +1,4 @@
-				<div class="col-sm-12">
+				<div class="col-sm-12 col-md-12">
 					<div class="features_items"><!--features_items-->
 						<h2 class="title text-center">Featured Items</h2>
 						<?php  
@@ -20,7 +20,7 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="dashboard/uploads/<?php echo $product_image; ?>" style="height: 200px;width: 100%;" />
+										<img src="dashboard/uploads/<?php echo $product_image; ?>" style="height: 250px;width: 250px;" />
 										<img src="assets/images/home/hotdeal.png" class="new" style="width: 40px;">
 										<h2>৳ <?php echo $product_price ?></h2>
 										<p><?php echo $product_name ?></p>
