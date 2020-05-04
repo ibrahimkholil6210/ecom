@@ -12,7 +12,7 @@
 					<div class="breadcrumbs">
 						<ol class="breadcrumb">
 							<li><a href="index">Home</a></li>
-							<li class="active">Shop</li>
+							<li class="active">Shops</li>
 						</ol>
 					</div>
 				</div>
