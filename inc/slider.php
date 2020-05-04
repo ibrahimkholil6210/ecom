@@ -26,14 +26,14 @@
 	                        ?>
 
 							<div class="item <?php echo $active ?>">
-								<div class="col-sm-6">
+								<div class="col-sm-6" style="margin: 15px 0;">
 									<h1><?php echo $product_name; ?></h1>
 									<p><?php echo substr($product_details, 0,100) ?></p>	
 									<a href="javascript:void(0)" class="btn btn-default get">৳ <?php echo $product_price ?></a>
 									<a href="details.php?product_id=<?php echo $product_id; ?>" class="btn btn-default get">Details</a>
 								</div>
 								<div class="col-sm-6">
-									<img src="dashboard/uploads/<?php echo $product_image; ?>" class="girl img-responsive" style="height: 60vh;" />
+									<img src="dashboard/uploads/<?php echo $product_image; ?>" class="girl img-responsive" style="height: 50vh;" />
 								</div>
 							</div>
 
