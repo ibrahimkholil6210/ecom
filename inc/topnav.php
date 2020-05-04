@@ -17,7 +17,7 @@
 							</form>
 						</div>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-sm-4 mobile-nav">
 						<div class="shop-menu pull-right">
 							<ul class="nav navbar-nav">
 
@@ -55,7 +55,7 @@
 									}else{
 								?>
 
-									<li><a href="index"><i class="fa fa-home"></i></a></li>
+									<li><a href="index"><i class="fa fa-home"></i> Home</a></li>
 									<li><a href="shop">Shop</a></li>
 									<li><a href="cart"><i class="fa fa-shopping-cart"></i> Cart 
 										<?php 

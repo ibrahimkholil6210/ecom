@@ -25,7 +25,7 @@
 					<ol class="breadcrumb">
 						<li><a href="index">Home</a></li>
 						<li><a href="shop">Shop</a></li>
-						<li class="active"><?php echo $fetch['product_name'] ?></li>
+						<li class="active"><span><?php echo $fetch['product_name'] ?></span></li>
 					</ol>
 				</div>
 			</div>

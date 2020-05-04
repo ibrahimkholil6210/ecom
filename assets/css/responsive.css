@@ -281,6 +281,39 @@ ul.sub-menu{
 /* XS Portrait */
 @media (max-width: 480px) {
 
+.mobile-nav{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+	background-color: #fff;
+}
+
+.navbar-nav .open .dropdown-menu {
+	position: absolute!important;
+	top: -148px!important;
+	left: -35px!important;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+}
+
+a#scrollUp {
+	bottom: 56px;
+	left: 10px;
+	right: auto;
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+	background-color: #fff; 
+	border-color: #fff;
+}
+
+
+.header-middle .container .row .col-sm-4 {
+    padding-left: 15px;
+}
+
 .contactinfo{
 	text-align: center;
 }
@@ -324,7 +357,7 @@ ul.sub-menu{
 }
 
 .shop-menu ul li {
-	padding: 0;
+	padding: 0 8px;
 }
 
 .header-middle .col-sm-4{

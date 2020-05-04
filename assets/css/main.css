@@ -280,6 +280,8 @@ ul.sub-menu {
 }
 
 
+
+
 .searchform input {
   border: 1px solid #DDDDDD;
   color: #CCCCC6;
@@ -2163,3 +2165,6 @@ h2.title {
 }
 
 
+.product-img{
+  width: auto!important;
+}

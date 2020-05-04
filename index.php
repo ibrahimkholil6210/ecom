@@ -2,7 +2,6 @@
 	
 	<?php include 'inc/topnav.php'; ?>
 	
-	<div style="height: 50px;"></div>
 	
 	
 	<section>
