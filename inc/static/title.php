@@ -9,7 +9,7 @@ switch($_SERVER['PHP_SELF'])  {
         $query = "SELECT * FROM tbl_products WHERE product_id = '$get_product_id'";
         $result = mysqli_query($con,$query);
         $fetch = mysqli_fetch_assoc($result);
-        $title = 'Product | '.$fetch['product_name']; 
+        $title = 'Shop | '.$fetch['product_name']; 
         break;
     case '/shop.php': 
         $title = 'Shop | JULIET\'S ZEAL'; 
