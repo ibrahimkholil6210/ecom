@@ -1,5 +1,7 @@
 <?php 
 
+    include "1.php";
+
     switch($_SERVER['PHP_SELF'])  {
         case '/index.php': 
             $title = 'Home | JULIET\'S ZEAL'; 
@@ -41,4 +43,5 @@
             $title = 'JULIET\'S ZEAL';
             break;
     } 
+    
 ?>
