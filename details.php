@@ -67,7 +67,7 @@
 				<div class="col-sm-12 padding-right">
 					<div class="product-details"><!--product-details-->
 						<div class="col-sm-5">
-							<div class="view-product">
+							<div class="view-product" id="imgZoom">
 								<img src="dashboard/uploads/<?php echo $product_image; ?>" alt="" />
 							</div>
 
