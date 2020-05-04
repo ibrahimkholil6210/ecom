@@ -1,40 +1,40 @@
 <?php 
 
 switch($_SERVER['PHP_SELF'])  {
-    case '/index.php': 
+    case '/ecom/index.php': 
         $title = 'Home | JULIET\'S ZEAL'; 
         break;
-    case '/details.php': 
+    case '/ecom/details.php': 
         $get_product_id = $_GET['product_id'];
         $query = "SELECT * FROM tbl_products WHERE product_id = '$get_product_id'";
         $result = mysqli_query($con,$query);
         $fetch = mysqli_fetch_assoc($result);
         $title = 'Product | '.$fetch['product_name']; 
         break;
-    case '/shop.php': 
+    case '/ecom/shop.php': 
         $title = 'Product | JULIET\'S ZEAL'; 
         break;
-    case '/cart.php': 
+    case '/ecom/cart.php': 
         $title = 'Cart | JULIET\'S ZEAL'; 
         break;
-    case '/login.php': 
+    case '/ecom/login.php': 
         $title = 'Authintication | JULIET\'S ZEAL'; 
         break;
-    case '/cat.php': 
+    case '/ecom/cat.php': 
         $category_id = $_GET['cat_id'];
         $query = "SELECT tbl_category.cat_name AS cat FROM tbl_category WHERE cat_id = '$category_id'";
         $result = mysqli_query($con,$query);
         $fetch = mysqli_fetch_assoc($result);
         $title = 'Category | '.$fetch['cat']; 
         break;
-    case '/featured.php': 
+    case '/ecom/featured.php': 
         $title = 'Featured | JULIET\'S ZEAL'; 
         break;
 
-    case '/newproduct.php': 
+    case '/ecom/newproduct.php': 
         $title = 'New Arrival | JULIET\'S ZEAL'; 
         break;    
-    case '/404.php': 
+    case '/ecom/404.php': 
         $title = 'OPPS! | JULIET\'S ZEAL'; 
         break;   
     default:
