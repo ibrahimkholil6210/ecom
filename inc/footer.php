@@ -4,7 +4,7 @@
 		<div class="footer-widget">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-3">
+					<div class="col-md-3 col-sm-12">
 						<div class="single-widget">
 							<h2>About Juliet’s Zeal</h2>
 							
@@ -12,9 +12,8 @@
 							
 						</div>
 					</div>
-					<div class="col-sm-1">
-					</div>
-					<div class="col-sm-2">
+					<div class="col-md-1"></div>
+					<div class="col-md-2 col-sm-12">
 						<div class="single-widget">
 							<h2>Policies</h2>
 							<ul class="nav nav-pills nav-stacked">
@@ -26,7 +25,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-md-2 col-sm-12">
 						<div class="single-widget">
 							<h2>Shopper</h2>
 							<ul class="nav nav-pills nav-stacked">
@@ -38,7 +37,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-sm-3 col-sm-offset-1">
+					<div class="col-md-4 col-sm-12 column-oofest">
 						<div class="single-widget">
 							<h2>Newsletter</h2>
 							<form action="#" class="searchform">

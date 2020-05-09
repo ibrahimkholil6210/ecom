@@ -292,6 +292,18 @@ ul.sub-menu{
 	border-top: 1px solid #e9e9e9;
 }
 
+.searchform{
+	position: relative;
+}
+
+.searchform button{
+	position: absolute;
+	margin-top: 0px!important;
+	margin-left: 0px!important;
+	top: 0;
+    right: 0;
+}
+
 .navbar-nav .open .dropdown-menu {
 	position: absolute!important;
 	top: -148px!important;
