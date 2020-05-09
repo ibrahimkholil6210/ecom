@@ -1292,6 +1292,28 @@ h2.title {
   content: " ";
 }
 
+.breadcrumbs.marquee .breadcrumb > li + li:before {
+  display: none;
+}
+
+.breadcrumbs.marquee .breadcrumb{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.breadcrumbs.marquee .breadcrumb .flex-conteiner{
+  display: flex;
+}
+
+.breadcrumbs.marquee .breadcrumb {
+  margin: 20px 0;
+}
+
+.breadcrumbs.marquee .breadcrumb  .active{
+  flex-basis: 95%;
+}
+
 #cart_items .cart_info {
   border: 1px solid #E6E4DF;
   margin-bottom: 50px
